@@ -10,247 +10,252 @@
     <link rel="shortcut icon" href="./201246556_3722792471158492_3314749056138022160_n.jpg" type="image/x-icon">
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.debug.js"></script>
     <script>
-        function fc(){
-        var right = document.getElementById('left-section').style.height;
-        var left = document.getElementById('right-section').style.height;
-        if (left > right) {
-            document.getElementById('right-section').style.height = left;
+        function generatePDF(){
+            alert("Currently, PDF Print not available!");
         }
-        else {
-            document.getElementById('left-section').style.height = right;
-        }}
     </script>
 </head>
 
-<body onload="fc()">
-    <header>
-        <img src="./201246556_3722792471158492_3314749056138022160_n.jpg" alt="sazad's image">
-        <div class="about">
-            <div class="about-heading">profile</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-        </div>
-    </header>
-    <section class="brand-name">
-        <div class="brand-title">professional title</div>
-        <div class="brand-name-container">sazad ahemad</div>
-    </section>
-    <section class="main">
-        <div class="left-section" id="left-section">
-            <div class="contacts">
-                <div class="contacts-heading">how to contact me</div>
-                <ul>
-                    <li>
-                        <i class="fa fa-map-marker fix-icon"></i>
-                        <a>Sriram Nagar, Housing Board, Khordha-12, Khordha, Odisha - 752055, India</a>
-                    </li>
-                    <li>
-                        <i class="fa fa-phone fix-icon"></i>
-                        <a href="tel:8763438208">+91 8763 438 208</a>
-                    </li>
-                    <li>
-                        <i class="fa fa-whatsapp fix-icon"></i>
-                        <a href="https://wa.me/8596829975" target="_blank">+91 8596 829 975</a>
-                    </li>
-                    <li>
-                        <i class="fa fa-envelope fix-icon"></i>
-                        <a href="mail:mail2sazad@gmail.com">mail2sazad@gmail.com</a>
-                    </li>
-                    <li>
-                        <i class="fa fa-linkedin fix-icon"></i>
-                        <a href="https://www.linkedin.com/in/connect2sazad" target="_blank">@connect2sazad</a>
-                    </li>
-                    <li>
-                        <i class="fa fa-twitter fix-icon"></i>
-                        <a href="https://www.twitter.com/connect2sazad" target="_blank">@connect2sazad</a>
-                    </li>
-                    <li>
-                        <i class="fa fa-github fix-icon"></i>
-                        <a href="https://www.github.com/connect2sazad" target="_blank">@connect2sazad</a>
-                    </li>
-                    <li>
-                        <i class="fa fa-instagram fix-icon"></i>
-                        <a href="https://www.instagram.com/connect2sazad" target="_blank">@connect2sazad</a>
-                    </li>
-                    <li>
-                        <i class="fa fa-instagram fix-icon"></i>
-                        <a href="https://www.instagram.com/sazad_works" target="_blank">@sazad_works</a>
-                    </li>
-                </ul>
+<body>
+    <div class="printer" onclick="generatePDF()" title="Print My Resume"><i class="fa fa-print"></i></div>
+    <div id="print-div">
+        <header>
+            <img src="./201246556_3722792471158492_3314749056138022160_n.jpg" alt="sazad's image">
+            <div class="about">
+                <div class="about-heading">profile</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                </p>
             </div>
-            <div class="contacts languages">
-                <div class="contacts-heading">what i speak</div>
-                <ul>
-                    <li>
-                        -&emsp;English
-                    </li>
-                    <li>
-                        -&emsp;Hindi
-                    </li>
-                    <li>
-                        -&emsp;Odia
-                    </li>
-                    <li>
-                        -&emsp;German
-                    </li>
-                    <li>
-                        -&emsp;French
-                    </li>
-                </ul>
-            </div>
-            <div class="contacts education">
-                <div class="contacts-heading">what i studied</div>
-                <ul>
-                    <li>
-                        <div class="a-education-heading">bachelor degree</div>
-                        <div class="a-education-year">2019 - 2023 (present)</div>
-                        <div class="a-education-place">GITA Autonomous College, Bhubaneswar</div>
-                    </li>
-                    <li>
-                        <div class="a-education-heading">intermediate</div>
-                        <div class="a-education-year">2019 (ISC)</div>
-                        <div class="a-education-place">SDA Higher Secondary School, Khordha</div>
-                    </li>
-                    <li>
-                        <div class="a-education-heading">matriculation</div>
-                        <div class="a-education-year">2017 (ICSE)</div>
-                        <div class="a-education-place">SDA Higher Secondary School, Khordha</div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="right-section" id="right-section">
-            <div class="right-section-inner-container">
-                <div class="experience">
-                    <div class="about-heading">professional skills</div>
-                    <div class="skills-block">
-                        <div class="skills-heading">coding strengths</div>
-                        <ul>
-                            <li>
-                                <div class="skill-name">JAVA</div>
-                                <div class="skill-rating"><progress value="70" max="100"></progress></div>
-                            </li>
-                            <li>
-                                <div class="skill-name">C</div>
-                                <div class="skill-rating"><progress value="60" max="100"></progress></div>
-                            </li>
-                            <li>
-                                <div class="skill-name">Python</div>
-                                <div class="skill-rating"><progress value="50" max="100"></progress></div>
-                            </li>
-                            <li>
-                                <div class="skill-name">GoLang</div>
-                                <div class="skill-rating"><progress value="30" max="100"></progress></div>
-                            </li>
-                            <li>
-                                <div class="skill-name">HTML/CSS/SASS/JS</div>
-                                <div class="skill-rating"><progress value="85" max="100"></progress></div>
-                            </li>
-                            <li>
-                                <div class="skill-name">JQUERY</div>
-                                <div class="skill-rating"><progress value="75" max="100"></progress></div>
-                            </li>
-                            <li>
-                                <div class="skill-name">NodeJS/ReactJs</div>
-                                <div class="skill-rating"><progress value="59" max="100"></progress></div>
-                            </li>
-                            <li>
-                                <div class="skill-name">PHP</div>
-                                <div class="skill-rating"><progress value="78" max="100"></progress></div>
-                            </li>
-                            <li>
-                                <div class="skill-name">Laravel</div>
-                                <div class="skill-rating"><progress value="54" max="100"></progress></div>
-                            </li>
-                            <li>
-                                <div class="skill-name">WordPress</div>
-                                <div class="skill-rating"><progress value="75" max="100"></progress></div>
-                            </li>
-                            <li>
-                                <div class="skill-name">MySQL</div>
-                                <div class="skill-rating"><progress value="50" max="100"></progress></div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="skills-block">
-                        <div class="skills-heading">OS strengths</div>
-                        <ul>
-                            <li>
-                                <div class="skill-name">Windows XP/7/8/10</div>
-                                <div class="skill-rating"><progress value="80" max="100"></progress></div>
-                            </li>
-                            <li>
-                                <div class="skill-name">Linux Ubuntu/CentOS</div>
-                                <div class="skill-rating"><progress value="86" max="100"></progress></div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="skills-block">
-                        <div class="skills-heading">Other strengths</div>
-                        <ul>
-                            <li>
-                                <div class="skill-name">VMWare and Tools</div>
-                                <div class="skill-rating"><progress value="25" max="100"></progress></div>
-                            </li>
-                            <li>
-                                <div class="skill-name">Docker</div>
-                                <div class="skill-rating"><progress value="20" max="100"></progress></div>
-                            </li>
-                        </ul>
-                    </div>
+        </header>
+        <section class="brand-name">
+            <div class="brand-title">professional title</div>
+            <div class="brand-name-container">sazad ahemad</div>
+        </section>
+        <section class="main">
+            <div class="left-section" id="left-section">
+                <div class="contacts">
+                    <div class="contacts-heading">how to contact me</div>
+                    <ul>
+                        <li>
+                            <i class="fa fa-map-marker fix-icon"></i>
+                            <a>Sriram Nagar, Housing Board, Khordha-12, Khordha, Odisha - 752055, India</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-phone fix-icon"></i>
+                            <a href="tel:8763438208">+91 8763 438 208</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-whatsapp fix-icon"></i>
+                            <a href="https://wa.me/8596829975" target="_blank">+91 8596 829 975</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope fix-icon"></i>
+                            <a href="mail:mail2sazad@gmail.com">mail2sazad@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-linkedin fix-icon"></i>
+                            <a href="https://www.linkedin.com/in/connect2sazad" target="_blank">@connect2sazad</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-twitter fix-icon"></i>
+                            <a href="https://www.twitter.com/connect2sazad" target="_blank">@connect2sazad</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-github fix-icon"></i>
+                            <a href="https://www.github.com/connect2sazad" target="_blank">@connect2sazad</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-instagram fix-icon"></i>
+                            <a href="https://www.instagram.com/connect2sazad" target="_blank">@connect2sazad</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-instagram fix-icon"></i>
+                            <a href="https://www.instagram.com/sazad_works" target="_blank">@sazad_works</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="experience">
-                    <div class="about-heading">work experience</div>
-                    <div class="experiences-block">
-                        <div class="an-experience">
-                            <div class="experince-basic-info">
-                                <div class="job-title">full stack developer</div>
-                                <div class="company-name">dg technosoft india</div>
-                                <div class="duration-month">July 2021 - present</div>
-                            </div>
-                            <div class="experience-desc">
-                                <p>Working as an intern in DG Technosoft India with the role of Full Stack Web Developer
-                                    &amp; my role is more inclined towards client site development. I have good hands on
-                                    with UI/UX and backend as well.</p>
-                            </div>
-                            <div class="experince-works">
-                                <ul>
-                                    <li>Developed the beta site for the Talspo Pvt. Ltd.</li>
-                                    <li>Developed the Jobs section</li>
-                                    <li>Developed the live application for training purposes</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="an-experience">
-                            <div class="experince-basic-info">
-                                <div class="job-title">full stack developer</div>
-                                <div class="company-name">talspo pvt ltd</div>
-                                <div class="duration-month">January 2020 - January 2021</div>
-                            </div>
-                            <div class="experience-desc">
-                                <p>Working as an intern in Talspo Private Limited with the role of Full Stack Web
-                                    Developer &amp; my role is more inclined towards business logic layer development. I
-                                    have good hands on with UI/UX and backend as well.</p>
-                            </div>
-                            <div class="experince-works">
-                                <ul>
-                                    <li>Developed the beta site for the Talspo Pvt. Ltd.</li>
-                                    <li>Developed the Jobs section</li>
-                                    <li>Developed the live application for training purposes</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                <div class="contacts languages">
+                    <div class="contacts-heading">what i speak</div>
+                    <ul>
+                        <li>
+                            -&emsp;English
+                        </li>
+                        <li>
+                            -&emsp;Hindi
+                        </li>
+                        <li>
+                            -&emsp;Odia
+                        </li>
+                        <li>
+                            -&emsp;German
+                        </li>
+                        <li>
+                            -&emsp;French
+                        </li>
+                    </ul>
+                </div>
+                <div class="contacts education">
+                    <div class="contacts-heading">what i studied</div>
+                    <ul>
+                        <li>
+                            <div class="a-education-heading">bachelor degree</div>
+                            <div class="a-education-year">2019 - 2023 (present)</div>
+                            <div class="a-education-place">GITA Autonomous College, Bhubaneswar</div>
+                        </li>
+                        <li>
+                            <div class="a-education-heading">intermediate</div>
+                            <div class="a-education-year">2019 (ISC)</div>
+                            <div class="a-education-place">SDA Higher Secondary School, Khordha</div>
+                        </li>
+                        <li>
+                            <div class="a-education-heading">matriculation</div>
+                            <div class="a-education-year">2017 (ICSE)</div>
+                            <div class="a-education-place">SDA Higher Secondary School, Khordha</div>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </section>
-    
+            <div class="right-section" id="right-section">
+                <div class="right-section-inner-container">
+                    <div class="experience">
+                        <div class="about-heading">professional skills</div>
+                        <div class="skills-block">
+                            <div class="skills-heading">coding strengths</div>
+                            <ul>
+                                <li>
+                                    <div class="skill-name">JAVA</div>
+                                    <div class="skill-rating"><progress value="70" max="100"></progress></div>
+                                </li>
+                                <li>
+                                    <div class="skill-name">C</div>
+                                    <div class="skill-rating"><progress value="60" max="100"></progress></div>
+                                </li>
+                                <li>
+                                    <div class="skill-name">Python</div>
+                                    <div class="skill-rating"><progress value="50" max="100"></progress></div>
+                                </li>
+                                <li>
+                                    <div class="skill-name">GoLang</div>
+                                    <div class="skill-rating"><progress value="30" max="100"></progress></div>
+                                </li>
+                                <li>
+                                    <div class="skill-name">HTML/CSS/SASS/JS</div>
+                                    <div class="skill-rating"><progress value="85" max="100"></progress></div>
+                                </li>
+                                <li>
+                                    <div class="skill-name">JQUERY</div>
+                                    <div class="skill-rating"><progress value="75" max="100"></progress></div>
+                                </li>
+                                <li>
+                                    <div class="skill-name">NodeJS/ReactJs</div>
+                                    <div class="skill-rating"><progress value="59" max="100"></progress></div>
+                                </li>
+                                <li>
+                                    <div class="skill-name">PHP</div>
+                                    <div class="skill-rating"><progress value="78" max="100"></progress></div>
+                                </li>
+                                <li>
+                                    <div class="skill-name">Laravel</div>
+                                    <div class="skill-rating"><progress value="54" max="100"></progress></div>
+                                </li>
+                                <li>
+                                    <div class="skill-name">WordPress</div>
+                                    <div class="skill-rating"><progress value="75" max="100"></progress></div>
+                                </li>
+                                <li>
+                                    <div class="skill-name">MySQL</div>
+                                    <div class="skill-rating"><progress value="50" max="100"></progress></div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="skills-block">
+                            <div class="skills-heading">OS strengths</div>
+                            <ul>
+                                <li>
+                                    <div class="skill-name">Windows XP/7/8/10</div>
+                                    <div class="skill-rating"><progress value="80" max="100"></progress></div>
+                                </li>
+                                <li>
+                                    <div class="skill-name">Linux Ubuntu/CentOS</div>
+                                    <div class="skill-rating"><progress value="86" max="100"></progress></div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="skills-block">
+                            <div class="skills-heading">Other strengths</div>
+                            <ul>
+                                <li>
+                                    <div class="skill-name">VMWare and Tools</div>
+                                    <div class="skill-rating"><progress value="25" max="100"></progress></div>
+                                </li>
+                                <li>
+                                    <div class="skill-name">Docker</div>
+                                    <div class="skill-rating"><progress value="20" max="100"></progress></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="experience">
+                        <div class="about-heading">work experience</div>
+                        <div class="experiences-block">
+                            <div class="an-experience">
+                                <div class="experince-basic-info">
+                                    <div class="job-title">full stack developer</div>
+                                    <div class="company-name">dg technosoft india</div>
+                                    <div class="duration-month">July 2021 - present</div>
+                                </div>
+                                <div class="experience-desc">
+                                    <p>Working as an intern in DG Technosoft India with the role of Full Stack Web
+                                        Developer
+                                        &amp; my role is more inclined towards client site development. I have good
+                                        hands on
+                                        with UI/UX and backend as well.</p>
+                                </div>
+                                <div class="experince-works">
+                                    <ul>
+                                        <li>Developed the beta site for the Talspo Pvt. Ltd.</li>
+                                        <li>Developed the Jobs section</li>
+                                        <li>Developed the live application for training purposes</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="an-experience">
+                                <div class="experince-basic-info">
+                                    <div class="job-title">full stack developer</div>
+                                    <div class="company-name">talspo pvt ltd</div>
+                                    <div class="duration-month">January 2020 - January 2021</div>
+                                </div>
+                                <div class="experience-desc">
+                                    <p>Working as an intern in Talspo Private Limited with the role of Full Stack Web
+                                        Developer &amp; my role is more inclined towards business logic layer
+                                        development. I
+                                        have good hands on with UI/UX and backend as well.</p>
+                                </div>
+                                <div class="experince-works">
+                                    <ul>
+                                        <li>Developed the beta site for the Talspo Pvt. Ltd.</li>
+                                        <li>Developed the Jobs section</li>
+                                        <li>Developed the live application for training purposes</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
 </body>
 
 </html>
