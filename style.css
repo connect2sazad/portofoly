@@ -4,7 +4,7 @@ html, body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: black;
+    /* background-color: black; */
 }
 
 header{
@@ -77,11 +77,15 @@ header img{
 
 .main{
     width: 100%;
+    /* display: flex;
+    flex-direction: row; */
 }
 
 .left-section{
     height: auto;
     width: 30%;
+    background-color: black;
+    float: left;
 }
 
 .contacts{
@@ -142,4 +146,164 @@ header img{
 
 .contacts ul li a:first-child{
     cursor: pointer;
+}
+
+.languages{
+    background-color: #404040;
+}
+
+.languages ul li{
+    height: 20px!important;
+}
+
+.education{
+    background-color: #000000;
+}
+
+.education ul li{
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 10px; */
+    height: auto;
+}
+
+.a-education-heading{
+    /* height: 20px; */
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.a-education-place{
+    font-style: oblique;
+}
+
+.right-section{
+    height: max-content;
+    width: 70%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    float: left;
+}
+
+.right-section-inner-container{
+    height: auto;
+    width: 90%;
+    margin-top: 50px;
+    /* background-color: teal; */
+}
+
+.experiences-block{
+    width: 100%;
+    /* background-color: teal; */
+    height: 200px;
+    margin-top: 25px;
+}
+
+.an-experience{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: teal; */
+    margin-top: 20px;
+}
+
+.experince-basic-info{
+    height: auto;
+    width: auto;
+    /* background-color: tomato; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.job-title{
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.company-name{
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.duration-month{
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.experience-desc{
+    width: 100%;
+}
+
+.experience-desc{
+    text-align: justify;
+}
+
+.experince-works{
+    width: 100%;
+    height: auto;
+    /* background-color: teal; */
+}
+
+.experince-works ul{
+    /* background-color: teal; */
+    /* margin-top: -5px; */
+    margin-left: 0;
+    padding-left: 18px;
+}
+
+.skills-block{
+    height: auto;
+    width: 100%;
+    /* background-color: teal; */
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.skills-heading{
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+
+.skills-block ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.skills-block ul li{
+    width: 100%;
+    height: auto;
+    /* background-color: teal; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.skill-name{
+    width: auto;
+    font-size: 20px;
+}
+
+.skill-rating{
+    width: 50%;
+    /* background-color: thistle; */
+}
+
+.skill-rating progress{
+    width: 100%;
+    height: 100%;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #595959;
+  }
+
+progress::-webkit-progress-value {
+    background-color: #FDE078;
 }
